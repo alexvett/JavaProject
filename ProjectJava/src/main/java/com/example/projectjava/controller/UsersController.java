@@ -19,13 +19,6 @@ public class UsersController {
     @Autowired
     private HeadlinesRepository headlinesRepository;
 
-//    @GetMapping("/users")
-//    public String getUsersPage(Model model) {
-//        List<User> users = usersRepository.findAll();
-//        model.addAttribute("users", users);
-//        return "users_page";
-//    }
-
     @GetMapping("/users")
     public String getUsersNotesPage(Model model) {
         List<Headline> headlines = headlinesRepository.findAll();
