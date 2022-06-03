@@ -12,11 +12,21 @@ public class CreateMassageController {
     @Autowired
     private HeadlinesRepository headlinesRepository;
 
+    /**
+     *Processing get requests
+     * @return "creation_page"
+     */
     @GetMapping("/create")
     public String getCreationPage() {
         return "creation_page";
     }
 
+    /**
+     * Processing post requests
+     * Saving new headlines to headlinesRepository
+     * @param headline
+     * @return "redirect:/users"
+     */
     @PostMapping("/create")
     public String createMessage(Headline headline) {
         headlinesRepository.save(headline);

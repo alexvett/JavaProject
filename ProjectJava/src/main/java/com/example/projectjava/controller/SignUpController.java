@@ -16,11 +16,21 @@ public class SignUpController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    /**
+     * Processing get requests
+     * @return "signUp_page"
+     */
     @GetMapping("/signUp")
     public String getSignUpPage() {
         return "signUp_page";
     }
 
+    /**
+     * Processing post requests
+     * Signing up and setting a new user to usersRepository with hashing the password
+     * @param user
+     * @return "redirect:/signIn"
+     */
     @PostMapping("/signUp")
     public String signUpUser(User user) {
         user.setHashPassword(passwordEncoder.encode(user.getPassword()));

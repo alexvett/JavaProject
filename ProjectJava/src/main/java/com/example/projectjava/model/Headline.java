@@ -20,6 +20,9 @@ public class Headline {
     private String post;
     private Date date;
 
+    /**
+     * Setting date of creation
+     */
     @PrePersist
     protected void onCreate() {
         date = new Date();
