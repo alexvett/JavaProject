@@ -15,6 +15,10 @@ public class UserDetailsImpl implements UserDetails {
         this.user = user;
     }
 
+    /**
+     * Checking different parameters for some user
+     * @return
+     */
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList(new SimpleGrantedAuthority("USER"));
