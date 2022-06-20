@@ -6,4 +6,4 @@
 2) создание анонимного сообщения
 
 # Запуск приложения
-Запуск осуществляется через средства Spring в IntelliJ IDEA.
+Осуществляется через средства Spring в IntelliJ IDEA после запуска файла ProjectJava/src/main/java/com/example/projectjava/ProjectJavaApplication.java
