@@ -17,6 +17,7 @@ public class Headline {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String title;
+    @Column(name = "post", columnDefinition = "VARCHAR NOT NULL")
     private String post;
     private Date date;
 

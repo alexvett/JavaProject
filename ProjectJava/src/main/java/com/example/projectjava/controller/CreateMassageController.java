@@ -30,6 +30,6 @@ public class CreateMassageController {
     @PostMapping("/create")
     public String createMessage(Headline headline) {
         headlinesRepository.save(headline);
-        return "redirect:/users";
+        return "redirect:/";
     }
 }
