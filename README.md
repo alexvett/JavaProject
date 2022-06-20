@@ -7,3 +7,4 @@
 
 # Запуск приложения
 Осуществляется через средства Spring в IntelliJ IDEA после запуска файла ProjectJava/src/main/java/com/example/projectjava/ProjectJavaApplication.java
+Работающее приложение находится по адресу http://localhost:8080/
