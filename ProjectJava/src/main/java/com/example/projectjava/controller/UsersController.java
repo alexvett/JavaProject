@@ -20,7 +20,7 @@ public class UsersController {
      * @param model
      * @return "users_page"
      */
-    @GetMapping("/users")
+    @GetMapping
     public String getUsersNotesPage(Model model) {
         List<Headline> headlines = headlinesRepository.findAll();
         model.addAttribute("headlines", headlines);
